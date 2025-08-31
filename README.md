@@ -1,24 +1,16 @@
-# 👋 Hi, I'm [Your Name]
+# 👋 Hi, I'm Abdelwaheb
 
-**Full Stack Developer | UI/UX Enthusiast | Problem Solver**
+**Computer Sciences Student**
 
-Welcome to my portfolio! I'm passionate about creating beautiful, functional web applications that solve real-world problems. With expertise in modern web technologies, I love turning ideas into digital experiences.
+Welcome to my portfolio! I'm passionate about creating beautiful, functional applications that solve real-world problems !
 
 ---
 
 ## 🚀 About Me
 
-I'm a dedicated developer with [X] years of experience in web development. I specialize in building scalable applications using cutting-edge technologies and best practices. When I'm not coding, you can find me exploring new frameworks, contributing to open source, or sharing knowledge with the developer community.
-
-- 🔭 Currently working on: **[Current Project/Company]**
-- 🌱 Learning: **[Technologies you're currently learning]**
-- 👯 Looking to collaborate on: **Open source projects and innovative web applications**
-- 💬 Ask me about: **React, Next.js, TypeScript, and modern web development**
-- 📫 How to reach me: **[your.email@example.com]**
-- ⚡ Fun fact: **[Something interesting about you]**
-
+I'm a third-year computer science student. I specialize in building scalable applications using cutting-edge technologies and best practices.
 ---
-
+<!--
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -36,38 +28,33 @@ I'm a dedicated developer with [X] years of experience in web development. I spe
 
 ### Tools & Platforms
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
-
+-->
 ## 🎯 Featured Projects
 
-### 🌟 [Project Name 1](https://github.com/yourusername/project1)
-**A modern web application built with Next.js and TypeScript**
+### 🌟 [E-karya-App](https://github.com/Abdelwahebbch/E-karya-App)
+**The e-Karya app is a mobile application designed to simplify the process of finding, renting, and managing residential**
 
-- 🔧 **Tech Stack:** Next.js, TypeScript, Tailwind CSS, Supabase
-- ✨ **Features:** User authentication, real-time updates, responsive design
-- 🚀 **Live Demo:** [View Project](https://your-project-url.com)
+- 🔧 **Tech Stack:** Java, JavaFx, FxCSS, Oracle Database
+- ✨ **Features:** User authentication, responsive design
 
 ![Project Screenshot](https://via.placeholder.com/600x300/4F46E5/FFFFFF?text=Project+Screenshot)
 
-### 🌟 [Project Name 2](https://github.com/yourusername/project2)
-**An innovative solution for [problem it solves]**
+### 🌟 [Pharmacy-App](https://github.com/Abdelwahebbch/Pharmacy-App)
+**Une application JavaFX pour la gestion des ordonnances médicales, développée avec Java 17, Oracle Database et iText PDF pour la génération de documents.**
 
-- 🔧 **Tech Stack:** React, Node.js, Express, MongoDB
-- ✨ **Features:** API integration, data visualization, mobile-first design
-- 🚀 **Live Demo:** [View Project](https://your-project-url.com)
+- 🔧 **Tech Stack:** Java, JavaFx, FxCSS, Oracle Database
+- ✨ **Features:** User authentication, responsive design
 
 ![Project Screenshot](https://via.placeholder.com/600x300/059669/FFFFFF?text=Project+Screenshot)
 
-### 🌟 [Project Name 3](https://github.com/yourusername/project3)
-**A creative project showcasing [specific skills/technologies]**
+### 🌟 [university_restaurant_app](https://github.com/Abdelwahebbch/university_restaurant_app)
+**Une application mobile moderne développée en Flutter pour faciliter et numériser l'obtention des repas au restaurant universitaire pour les étudiants tunisiens.**
 
-- 🔧 **Tech Stack:** Vue.js, Python, FastAPI, PostgreSQL
-- ✨ **Features:** Machine learning integration, interactive UI, performance optimization
-- 🚀 **Live Demo:** [View Project](https://your-project-url.com)
+- 🔧 **Tech Stack:** Flutter, Dart, Payment API, Firebase
+- ✨ **Features:** User authentication, responsive design (Material Design 3 - Google's latest open source design system), easy payment method
 
 ![Project Screenshot](https://via.placeholder.com/600x300/DC2626/FFFFFF?text=Project+Screenshot)
 
@@ -76,25 +63,25 @@ I'm a dedicated developer with [X] years of experience in web development. I spe
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Abdelwahebbch&show_icons=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abdelwahebbch&layout=compact&theme=radical" alt="Top Languages" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yourusername&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abdelwahebbch&theme=radical" alt="GitHub Streak" />
 </div>
 
 ---
 
 ## 🏆 Achievements & Certifications
 
-- 🥇 **[Certification Name]** - [Issuing Organization] (Year)
-- 🏅 **[Achievement/Award]** - [Context/Competition] (Year)
-- 📜 **[Course/Bootcamp]** - [Institution] (Year)
-- 🎖️ **[Recognition]** - [Details] (Year)
+- 🥇 **[CCNA : Présentation des réseaux ]** - [Facuté des sciences de Gabes](https://fsg.rnu.tn/fr) (2025)
+<!--- 🏅 **[Achievement/Award]** - [Context/Competition] (Year)-->
+- 📜 **[The Complete Flutter Development Bootcamp with Dart]** - [Udemy] (2025)
+<!--- 🎖️ **[Recognition]** - [Details] (Year)-->
 
 ---
-
+<!--
 ## 📝 Latest Blog Posts
 
  BLOG-POST-LIST:START 
@@ -105,22 +92,21 @@ I'm a dedicated developer with [X] years of experience in web development. I spe
  BLOG-POST-LIST:END 
 
 ---
-
+-->
 ## 🤝 Let's Connect!
 
 I'm always interested in connecting with fellow developers, potential collaborators, and anyone passionate about technology. Feel free to reach out!
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwaheb-bouchahwa-8449a5224)
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bouchahwaabdelwaheb@ieee.org)
 
 </div>
 
 ---
-
+<!--
 ## 💼 Work Experience
 
 ### **Senior Frontend Developer** | [Company Name] | *2022 - Present*
@@ -142,15 +128,16 @@ I'm always interested in connecting with fellow developers, potential collaborat
 - Maintained and updated legacy codebases
 
 ---
-
+-->
 ## 🎓 Education
 
-**Bachelor of Science in Computer Science**  
-*[University Name]* | *Graduated: Year*
+**Bachelor of Computer Science**  
+*[faculty of sciences of gabes]* | *Graduated: 2026*
 
 **Relevant Coursework:** Data Structures, Algorithms, Web Development, Database Systems, Software Engineering
 
 ---
+<!--
 
 ## 📈 Current Goals
 
@@ -162,7 +149,7 @@ I'm always interested in connecting with fellow developers, potential collaborat
   - Grow my developer network
 
 ---
-
+-->
 <div align="center">
 
 ### ⭐ If you find my work interesting, please consider giving my repositories a star!
@@ -173,4 +160,4 @@ I'm always interested in connecting with fellow developers, potential collaborat
 
 ---
 
-*Last updated: [Current Date]*
+*Last updated: [31/08/2025]*
