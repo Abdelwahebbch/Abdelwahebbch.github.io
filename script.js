@@ -38,6 +38,53 @@ document.querySelectorAll("section").forEach((section) => {
   observer.observe(section)
 })
 
+// Certificate Lightbox
+const lightbox = document.getElementById("cert-lightbox")
+let pauseCarouselAutoplay = () => {}
+let resumeCarouselAutoplay = () => {}
+
+if (lightbox) {
+  const lightboxImg = document.getElementById("lightbox-img")
+  const lightboxCaption = document.getElementById("lightbox-caption")
+  const lightboxClose = document.getElementById("lightbox-close")
+
+  const openLightbox = (imgEl) => {
+    lightboxImg.src = imgEl.src
+    lightboxImg.alt = imgEl.alt || ""
+    const card = imgEl.closest(".certification-card")
+    const title = card ? card.querySelector("h3") : null
+    lightboxCaption.textContent = title ? title.textContent : imgEl.alt || ""
+    lightbox.classList.add("active")
+    document.body.style.overflow = "hidden"
+    pauseCarouselAutoplay()
+  }
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("active")
+    document.body.style.overflow = ""
+    resumeCarouselAutoplay()
+  }
+
+  document.querySelectorAll(".cert-image img").forEach((img) => {
+    img.addEventListener("click", () => openLightbox(img))
+  })
+
+  lightboxClose.addEventListener("click", closeLightbox)
+
+  // Close when clicking the dark backdrop (but not the image itself)
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      closeLightbox()
+    }
+  })
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox()
+    }
+  })
+}
+
 // Certifications carousel
 const certTrack = document.getElementById("cert-track")
 
@@ -101,6 +148,9 @@ if (certTrack) {
     stopAutoplay()
     startAutoplay()
   }
+
+  pauseCarouselAutoplay = stopAutoplay
+  resumeCarouselAutoplay = startAutoplay
 
   const updateCarouselState = () => {
     const maxScroll = certTrack.scrollWidth - certTrack.clientWidth
