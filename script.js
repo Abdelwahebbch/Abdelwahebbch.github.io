@@ -37,3 +37,115 @@ document.querySelectorAll("section").forEach((section) => {
   section.style.transition = "opacity 0.6s ease, transform 0.6s ease"
   observer.observe(section)
 })
+
+// Certifications carousel
+const certTrack = document.getElementById("cert-track")
+
+if (certTrack) {
+  const prevBtn = document.getElementById("cert-prev")
+  const nextBtn = document.getElementById("cert-next")
+  const dotsContainer = document.getElementById("cert-dots")
+  const cards = Array.from(certTrack.children)
+
+  // Build dot indicators
+  const dots = cards.map((_, index) => {
+    const dot = document.createElement("button")
+    dot.classList.add("carousel-dot")
+    dot.setAttribute("aria-label", `Go to certification ${index + 1}`)
+    dot.addEventListener("click", () => {
+      cards[index].scrollIntoView({
+        behavior: "smooth",
+        inline: "start",
+        block: "nearest",
+      })
+      restartAutoplay()
+    })
+    dotsContainer.appendChild(dot)
+    return dot
+  })
+
+  const getCardStep = () => {
+    if (cards.length < 1) return 0
+    const cardRect = cards[0].getBoundingClientRect()
+    const style = window.getComputedStyle(certTrack)
+    const gap = parseFloat(style.columnGap || style.gap || "0")
+    return cardRect.width + gap
+  }
+
+  const AUTOPLAY_DELAY = 4000
+  let autoplayTimer = null
+
+  const goToNext = () => {
+    const maxScroll = certTrack.scrollWidth - certTrack.clientWidth
+    if (certTrack.scrollLeft >= maxScroll - 4) {
+      // Loop back to the start
+      certTrack.scrollTo({ left: 0, behavior: "smooth" })
+    } else {
+      certTrack.scrollBy({ left: getCardStep(), behavior: "smooth" })
+    }
+  }
+
+  const startAutoplay = () => {
+    stopAutoplay()
+    autoplayTimer = setInterval(goToNext, AUTOPLAY_DELAY)
+  }
+
+  const stopAutoplay = () => {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer)
+      autoplayTimer = null
+    }
+  }
+
+  const restartAutoplay = () => {
+    stopAutoplay()
+    startAutoplay()
+  }
+
+  const updateCarouselState = () => {
+    const maxScroll = certTrack.scrollWidth - certTrack.clientWidth
+    prevBtn.disabled = certTrack.scrollLeft <= 4
+    nextBtn.disabled = certTrack.scrollLeft >= maxScroll - 4
+
+    // Determine the closest card to mark its dot active
+    let closestIndex = 0
+    let closestDistance = Infinity
+    cards.forEach((card, index) => {
+      const distance = Math.abs(card.offsetLeft - certTrack.scrollLeft)
+      if (distance < closestDistance) {
+        closestDistance = distance
+        closestIndex = index
+      }
+    })
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === closestIndex)
+    })
+  }
+
+  prevBtn.addEventListener("click", () => {
+    certTrack.scrollBy({ left: -getCardStep(), behavior: "smooth" })
+    restartAutoplay()
+  })
+
+  nextBtn.addEventListener("click", () => {
+    certTrack.scrollBy({ left: getCardStep(), behavior: "smooth" })
+    restartAutoplay()
+  })
+
+  certTrack.addEventListener("scroll", () => {
+    window.requestAnimationFrame(updateCarouselState)
+  })
+
+  window.addEventListener("resize", updateCarouselState)
+
+  // Pause autoplay while the user is interacting, resume after
+  certTrack.addEventListener("mouseenter", stopAutoplay)
+  certTrack.addEventListener("mouseleave", startAutoplay)
+  certTrack.addEventListener("touchstart", stopAutoplay, { passive: true })
+  certTrack.addEventListener("touchend", startAutoplay)
+  certTrack.addEventListener("wheel", restartAutoplay, { passive: true })
+
+  // Initialize state once layout is ready
+  window.requestAnimationFrame(updateCarouselState)
+  startAutoplay()
+}

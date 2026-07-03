@@ -127,7 +127,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-      <div class="container" >
+      <div class="container">
         <h2>Projects</h2>
         <div class="projects-grid">
           <div class="project-card">
@@ -147,13 +147,31 @@
               <span class="tag">Firebase</span>
               <span class="tag">Gemini API</span>
             </div>
+
             <a
               href="https://github.com/Abdelwahebbch/Codingo"
               target="_blank"
               rel="noopener noreferrer"
               class="github-link"
-              >View on GitHub →</a
             >
+              View on GitHub →
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fsg.pfe&pli=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on Play Store →
+            </a>
+            <a
+              href="https://codingo.software"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on Web →
+            </a>
           </div>
           <div class="project-card">
             <h3>Tawassol</h3>
@@ -313,25 +331,99 @@
 
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
-      <div class="container">
-        <h2>Certifications</h2>
-        <div class="certification-card">
+      <h2>Certifications</h2>
+      <div class="certification-carousel">
+        <button
+          class="carousel-arrow carousel-arrow-prev"
+          id="cert-prev"
+          aria-label="Previous certification"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="certification-container" id="cert-track">
+          <div class="certification-card">
           <div class="cert-info">
-            <h3>CCNA : Présentation des réseaux</h3>
+            <h3>CCNA : Introduction aux réseaux</h3>
             <p class="cert-issuer">
-              Faculty of Sciences of Gabes - Cisco Networking Academy
+              Faculté des Sciences de Gabès - Cisco Networking Academy
             </p>
-            <p class="cert-date">29 January 2025</p>
-            <p class="cert-instructor">Instructor: Haifa Touati</p>
+            <p class="cert-date">29 janvier 2025</p>
+            <p class="cert-instructor">Formatrice : Haifa Touati</p>
           </div>
           <div class="cert-image">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/_certificate_bouchahwaabdelwaheb-gmail-com_d383b800-b898-4ec3-8dd6-35ef52569f04_page-0001.jpg-ucCNiH8PRkxgWeH07dl45fhfnZ01nD.jpeg"
-              alt="CCNA Certificate"
+              alt="Certificat CCNA"
             />
           </div>
         </div>
+
+        <div class="certification-card">
+          <div class="cert-info">
+            <h3>Participation au Demo Day avec Codingo</h3>
+            <p class="cert-issuer">Université de Gabès</p>
+            <p class="cert-date">30 juin 2026</p>
+          </div>
+          <div class="cert-image">
+            <img src="images/demo_day.jpg" alt="Certificat Demo Day" />
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="cert-info">
+            <h3>Statut National de l'Étudiant Entrepreneur (SNEE)</h3>
+            <p class="cert-issuer">
+              Université de Gabès - Pôle de l'Étudiant Entrepreneur
+            </p>
+            <p class="cert-date">8 juin 2026</p>
+          </div>
+          <div class="cert-image">
+            <img src="images/PEEUG.jpg" alt="SNEE" />
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="cert-info">
+            <h3>Hackathon - Centre ELIF</h3>
+            <p class="cert-issuer">Centre ELIF Djerba - Université de Gabès</p>
+            <p class="cert-date">29 janvier 2025</p>
+            <p class="cert-instructor">
+              Dans le cadre de ce hackathon de 24 heures, j'ai occupé le rôle de
+              responsable du développement au sein de mon équipe et j'ai
+              contribué au développement de l'application Tawassol.
+            </p>
+          </div>
+          <div class="cert-image">
+            <img src="images/ELIF.jpg" alt="Hackathon ELIF" />
+          </div>
+        </div>
+        </div>
+
+        <button
+          class="carousel-arrow carousel-arrow-next"
+          id="cert-next"
+          aria-label="Next certification"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
       </div>
+
+      <div class="carousel-dots" id="cert-dots"></div>
     </section>
 
     <!-- Contact Section -->
